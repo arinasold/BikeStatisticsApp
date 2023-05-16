@@ -1,1 +1,1 @@
-web: java -jar helsinkicitybike.jar
+web: java -jar HelsinkiCityBike.jar
