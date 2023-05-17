@@ -13,8 +13,18 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>HelsinkiCityBike</name>
 	<description>Project for Solita Academy pre-assignment</description>
-
+	<properties>
+		<java.version>17</java.version>
+	</properties>
 	<dependencies>
+	    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-jdbc</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+    </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jdbc</artifactId>
