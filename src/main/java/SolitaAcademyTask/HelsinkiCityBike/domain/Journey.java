@@ -2,6 +2,8 @@ package SolitaAcademyTask.HelsinkiCityBike.domain;
 
 
 import java.sql.Timestamp;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -30,12 +32,12 @@ public class Journey {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "departure_station_id", referencedColumnName = "id")
-    @JsonIgnoreProperties({"departureJourneys", "returnJourneys"})
+    @JsonIgnore
     private Station departureStation;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "return_station_id", referencedColumnName = "id")
-    @JsonIgnoreProperties({"departureJourneys", "returnJourneys"})
+    @JsonIgnore
     private Station returnStation;
 
     @Column(name = "distance")
