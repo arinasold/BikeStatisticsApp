@@ -1,14 +1,15 @@
 package SolitaAcademyTask.HelsinkiCityBike.domain;
 
-import java.util.List;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.CrudRepository;
 
-public interface StationRepository extends CrudRepository<Station, Long>{
-	
-	List<Station> findAllByDepartureJourneysIsNotNull();
-    List<Station> findAllByReturnJourneysIsNotNull();
 
-    List<Journey> findByDepartureJourneys(Station departureStation);
-    List<Journey> findByReturnJourneys(Station returnStation);
+public interface StationRepository extends CrudRepository<Station, Long> {
+
+
+    Page<Station> findAll(Pageable pageable);
+
 }
+
