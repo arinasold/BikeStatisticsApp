@@ -1,6 +1,6 @@
 # BikeStatisticsApp
 This is the server-side application for the Helsinki City Bike pre-assigment. It provides an API for managing and retrieving bike journey data. 
-
+The Frontend code [here](https://github.com/arinasold/BikeStatisticsFrontEnd)
 ## Technologies Used
 - Server-side: Java, Spring Boot, MySQL
 - Client-side: React, Ag-Grid, Material-UI
